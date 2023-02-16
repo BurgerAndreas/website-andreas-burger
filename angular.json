@@ -3,5 +3,105 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "AndreasBurgerCom": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/andreas-burger-com",
+      "sourceRoot": "projects/andreas-burger-com/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/andreas-burger-com",
+            "index": "projects/andreas-burger-com/src/index.html",
+            "main": "projects/andreas-burger-com/src/main.ts",
+            "polyfills": "projects/andreas-burger-com/src/polyfills.ts",
+            "tsConfig": "projects/andreas-burger-com/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/andreas-burger-com/src/favicon.ico",
+              "projects/andreas-burger-com/src/assets"
+            ],
+            "styles": [
+              "projects/andreas-burger-com/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "projects/andreas-burger-com/src/environments/environment.ts",
+                  "with": "projects/andreas-burger-com/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "AndreasBurgerCom:build:production"
+            },
+            "development": {
+              "browserTarget": "AndreasBurgerCom:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "AndreasBurgerCom:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/andreas-burger-com/src/test.ts",
+            "polyfills": "projects/andreas-burger-com/src/polyfills.ts",
+            "tsConfig": "projects/andreas-burger-com/tsconfig.spec.json",
+            "karmaConfig": "projects/andreas-burger-com/karma.conf.js",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/andreas-burger-com/src/favicon.ico",
+              "projects/andreas-burger-com/src/assets"
+            ],
+            "styles": [
+              "projects/andreas-burger-com/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
   }
 }
