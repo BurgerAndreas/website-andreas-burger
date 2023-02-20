@@ -2,12 +2,15 @@
 
 ## Initial setup
 
-make sure you have a recent node / npm installed.
+Make sure you have a recent node / npm installed.
 
-run  `npm i` in this directory.
+Run  `npm i` in this directory.
 
-globally install the Angular CLI (v15, the latest as of writing)
+Globally install the Angular CLI (v15, the latest as of writing)
 `npm i -g @angular/cli`
+
+Build the "Atoms" Library (where I'd like to put reusable code bits and pieces)
+`ng build --project AtomsLib`
 
 ## Development server
 
