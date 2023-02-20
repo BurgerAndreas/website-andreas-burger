@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
-import { AtomsLibComponent } from './atoms-lib.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 
 @NgModule({
   declarations: [
-    AtomsLibComponent
+    NavBarComponent
   ],
   imports: [
   ],
   exports: [
-    AtomsLibComponent
+    NavBarComponent
   ]
 })
 export class AtomsLibModule { }

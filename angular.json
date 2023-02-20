@@ -107,7 +107,7 @@
       "projectType": "library",
       "root": "projects/atoms-lib",
       "sourceRoot": "projects/atoms-lib/src",
-      "prefix": "lib",
+      "prefix": "atom",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
