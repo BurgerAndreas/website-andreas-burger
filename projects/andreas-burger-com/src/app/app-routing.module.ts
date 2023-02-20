@@ -1,8 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { RoutePlus } from 'AtomsLib';
+import { HomeComponent } from './home/home.component';
 
-const routes: Routes = [
-
+export const routes: RoutePlus[] = [
+  {
+    path: "",
+    pathMatch: "full",
+    title: "Andreas Burger - connect",
+    displayName: "connect",
+    component: HomeComponent
+  }
 ];
 
 @NgModule({
