@@ -36,5 +36,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Current TODOs
 
-- make auto-recompile on AtomsLib change work
+- make import of nhl97-atoms-lib work
 - make "routes to <ul> <li>" transformation work
