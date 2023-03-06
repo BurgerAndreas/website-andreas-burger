@@ -1,0 +1,83 @@
+{
+  "responsive": true,
+  "glyph-icons": true,
+  "enableEditorJS": true,
+  "description": "With bold fonts, big colors and impressive images, Paris gives your website a strong visual impression that encourages exploration. The theme's headline fade provides additional transition effects that add even more depth to the sharply designed page types.",
+  "features": [
+    "responsive",
+    "css-buttons",
+    "social-icons",
+    "animation",
+    "full-width-header",
+    "navigation-fixed",
+    "navigation-top",
+    "color-palettes"
+  ],
+  "color-support": {
+    "primary": "#00FF8E"
+  },
+  "color-presets": [
+    {
+      "variation": "green",
+      "primary": "#00FF8E"
+    },
+    {
+      "variation": "yellow",
+      "primary": "#FFF200"
+    },
+    {
+      "variation": "blue",
+      "primary": "#30C9F6"
+    },
+    {
+      "variation": "orange",
+      "primary": "#FF7201"
+    },
+    {
+      "variation": "violet",
+      "primary": "#CD40EE"
+    },
+    {
+      "variation": "black",
+      "primary": "#acafb1",
+      "is-dark": true
+    }
+  ],
+  "variations": [
+      {
+        "value": "light",
+        "sample": "#ffffff",
+        "is-dark": false
+      },
+      {
+        "value": "dark",
+        "sample": "#000000",
+        "is-dark": true
+      }
+  ],
+  "custom-options": [
+    {
+      "name": "collapsed-menu",
+      "title": "Collapsed Menu",
+      "type": "toggle",
+      "default": false,
+      "is-body-class": true,
+      "is-less-var": false
+    },
+    {
+      "name": "banner-bg",
+      "title": "Banner Background",
+      "type": "toggle",
+      "default": true,
+      "is-body-class": true,
+      "is-less-var": false
+    }
+  ],
+  "page-types": {
+    "landing": {
+      "header-section": {
+        "resizable": false
+      }
+    }
+  }
+}

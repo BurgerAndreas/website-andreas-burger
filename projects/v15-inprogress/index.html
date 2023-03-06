@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <link href="textleft_imageright.css" rel="stylesheet">
+  <link href="image_grid.css" rel="stylesheet">
+  <title>Andreas Burger</title>
+  <!-- Load header, footer -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script> 
+  $(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+  });
+  </script> 
+</head>
+
+<body class="full-height-grow">
+
+  <!-- Container excluding footer -->
+  <div class="container full-height-grow">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main section -->
+    <section class="main-section-default">
+      <!-- Text-->
+      <div class="call-to-action">
+        <!-- <h1 class="title">Physics. Software. Business</h1> -->
+        <h1 class="title">Physics. Software. Business</h1>
+        <span class="subtitle">
+          Here are bits of my ideas, work, and research. <br>
+          Find something you like - and connect
+        </span>
+
+        <a href="contact.html" class="btn">Connect</a>
+      </div>
+
+      <!-- Single image -->
+      <!-- <div class="img-wrapper">
+        <div class="image-left"></div>
+      </div> -->
+
+      <!-- Image grid -->
+      <div class="container-image-grid">
+        <img src="images/kyoto.JPG" alt="Photo 1" class="composition__photo composition__photo--p1">
+        <img src="images/kyoto.JPG" alt="Photo 2" class="composition__photo composition__photo--p2">
+        <img src="images/kyoto.JPG" alt="Photo 3" class="composition__photo composition__photo--p3">
+
+        <img src="images/kyoto.JPG" alt="Photo 4" class="composition__photo composition__photo--p4">
+        <img src="images/kyoto.JPG" alt="Photo 5" class="composition__photo composition__photo--p5">
+        <img src="images/kyoto.JPG" alt="Photo 6" class="composition__photo composition__photo--p6">
+
+        <img src="images/kyoto.JPG" alt="Photo 7" class="composition__photo composition__photo--p7">
+        <img src="images/kyoto.JPG" alt="Photo 8" class="composition__photo composition__photo--p8">
+        <img src="images/kyoto.JPG" alt="Photo 9" class="composition__photo composition__photo--p9">
+      </div>
+
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+</body>
+
+</html>
