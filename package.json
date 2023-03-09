@@ -21,7 +21,7 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0",
-    "nhl97-atoms-lib": "../WebEng Dojo/AngularMono/dist/atoms-lib"
+    "nhl97-atoms-lib": "file:../WebEng Dojo/AngularMono/dist/atoms-lib"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.1.6",
